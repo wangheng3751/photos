@@ -12,6 +12,9 @@ import { connect } from 'react-redux';
 import { Scene, Router, TabBar, Modal, Schema, Actions, Reducer } from 'react-native-router-flux';
 import TabIcon from '../common/tabIcons';
 import PhotosPage from '../modules/photos/containers/photosPage';
+import AlbumsPage from '../modules/albums/containers/albumsPage';
+import SharingPage from '../modules/sharing/containers/sharingPage';
+import AssistantPage from '../modules/assistant/containers/assistantPage';
 
 class AppRouter extends Component {
     static propTypes = {
@@ -80,19 +83,19 @@ const scenes = Actions.create(
 
             <Scene key="albums"
                 hideNavBar={true}
-                component={PhotosPage}      
+                component={AlbumsPage}      
                 icon={TabIcon}                
                 titleStyle={styles.titleStyle} />
 
             <Scene key="assistant"
                 hideNavBar={true}
-                component={PhotosPage}                           
+                component={AssistantPage}                           
                 icon={TabIcon}
                 titleStyle={styles.titleStyle} />
 
             <Scene key="sharing"
                 hideNavBar={true}
-                component={PhotosPage}                    
+                component={SharingPage}                    
                 icon={TabIcon}
                 titleStyle={styles.titleStyle} />
         </Scene>

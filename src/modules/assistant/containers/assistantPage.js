@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as photosActions from '../photosActions';
-import PhotosComponent from "../components/photosComponent"
+import AssistantComponent from "../components/assistantComponent"
 
-class PhotosPage extends Component {
+class AssistantPage extends Component {
     constructor(props) {
         super(props);
     }
@@ -17,7 +16,7 @@ class PhotosPage extends Component {
     }
     render() {
         return (
-            <PhotosComponent />
+            <AssistantComponent />
         )
     }  
 }
@@ -30,8 +29,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(photosActions, dispatch)
+        
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PhotosPage);
+export default connect(mapStateToProps, mapDispatchToProps)(AssistantPage);
