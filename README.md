@@ -10,8 +10,12 @@
 ### 4.modules
 该目录用户放置项目的各模块文件，是项目的核心及开发中最常使用到的目录。
 如photos目录下放置了App photos模块文件，结构如下：
+
 ![image.png](https://upload-images.jianshu.io/upload_images/9814928-5b13951f80ffcf48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 > 其中actions、reducer及state文件用于整个模块下所有页面的状态管理及操作响应。
+
 > components文件夹下存放属于本模块的各个页面，并实现页面的界面逻辑；
+
 >containers文件夹存放components中相应的各个页面的业务逻辑，负责调用action里的方法实现后台交互等。
 
